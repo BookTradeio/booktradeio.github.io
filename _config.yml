@@ -2,6 +2,7 @@
 
 title: BookTrade.io
 baseurl: "" # name of the repository
+url: "http://www.booktrade.io"
 email: your@email.com
 
 
@@ -36,6 +37,5 @@ sass:
 
 exclude:
 - README.md
-
 
 gems: [jekyll-seo-tag, jekyll-paginate]
