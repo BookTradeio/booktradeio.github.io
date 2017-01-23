@@ -10,18 +10,16 @@ html, body {
 }
 
 body {
-        max-width: $content-width;
         font-family: $base-font-family;
         margin: 0 auto;
         line-height: $base-line-height;
         font-size: $base-font-size;
         color: $text-color;
-        padding: 2em 1em;
         text-rendering: optimizeLegibility;
         height: 100%;
     @include media-query($on-palm) {
         max-width: 100%;
-        padding: 1em;
+        padding: 0em !important;
     }
 
     }
@@ -34,6 +32,41 @@ body {
          text-transform: capitalize;
     }
 
+.page-wrap {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 2em 1em;
+}
+
+.page-wrap-header {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 10px 0;
+    
+    .site-title a {
+	    color: #fff;
+    }
+}
+
+.site-title {
+	float: left;
+}
+
+.nav-bar {
+	float: right;
+	
+	a {
+		color: #fff;
+	}
+	
+	.register, .login {
+	    background: #fff none repeat scroll 0 0;
+	    border: 1px solid #fff;
+	    border-radius: 10px;
+	    color: #60c17d;
+	    padding: 5px 15px;
+	}
+}
 
 a {
     color: $brand-color;
@@ -109,28 +142,9 @@ blockquote {
     }
 }
 
-
-.home {
-    background-image: url(../images/left-arrow.svg);
-    background-repeat: no-repeat;
-    height: 40px;
-    width: 40px;
-    opacity: 0.9;
-    position: fixed;
-    top: 50px;
-    left: 50px;
-    &:hover{
-    opacity: 1;
-    }
-    @include media-query($on-laptop) {
-        top: 90%;
-        left: 90%;
-        height: 30px;
-        width: 30px;
-        opacity: 0.6;
-    }
-
-    
+header {
+	background: #2ecc71;
+	 height: 56px;
 }
 
 .video {

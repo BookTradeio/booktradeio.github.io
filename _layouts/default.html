@@ -11,11 +11,21 @@ layout: compress
   <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
   {% seo %}
 </head>
-<body style="background-color: rgb(255, 255, 255)">
- <script src="{{site.baseurl}}/js/theme.min.js"></script>
+<body>
+
   <header>
-      <a href="{{site.baseurl}}/"><div class="home"></div></a>
+  <div class="page-wrap-header">
+      	<div class="site-title"><a href="{{site.baseurl}}/">{{ site.title }}</a></div>
+      	
+      	<div class="nav-bar">
+      	<a class="login">Login</a>
+      	<a class="register">Register</a>
+      	</div>
+  </div>
   </header>
+
+<div class="page-wrap">
+ <script src="{{site.baseurl}}/js/theme.min.js"></script>
 
   {{ content }}
 
@@ -28,6 +38,6 @@ layout: compress
     <div class="theme" onclick="theme()" style="    background-image: url({{site.baseurl}}/images/theme.svg)"></div>
 </footer>
 {% include analytics.html %}
-
+</div>
 </body>
 </html>
